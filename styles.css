@@ -1,0 +1,372 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    
+  }
+  
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #0D0603;
+    /*background-image: url(./media/images/1000018728.jpg);*/
+}
+
+.business-name {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3.5rem; /* Adjust the size as needed */
+    color: #d0ddea; /* Example color - adjust as needed */
+    text-align: left;
+    margin: 20px 50px;
+    text-shadow: 5px 5px #000000;
+
+  }
+  .highlighted-text {
+    font-size: 1.2rem; /* Larger font size */
+    color: #050b12; /* A bright, noticeable color */
+    font-weight: bold; /* Make it bold */
+    text-align: center; /* Center align the text */
+    margin: 20px 0; /* Add some margin for spacing */
+    padding: 10px; /* Padding for better readability */
+    background-color: rgba(255, 255, 255, 0.5); /* Light background to make it pop out */
+    border-radius: 10px; /* Rounded corners for the background */
+    display: inline-block; /* To wrap the background tightly around the text */
+    border: 2px solid rgb(11, 11, 11);  }
+
+  /* Top Navigation Styles */
+  .top-nav {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+    background: #0D0603;
+    border-radius: 30px; /* Adjust the value to control the roundness of the corners */
+    /*border: 2px solid white; /* Create a white border around the box */
+    /*background: linear-gradient(deg, #3498db, rgb(51, 46, 116) 40%, #0D0603);*/
+    height: 100px;
+    z-index: -1;
+  }
+  
+  .logo img {
+        position: relative;
+        width: 550px; /* Adjust the width as needed */
+        height: 550px; /* Adjust the height as needed */
+        /*background-color: #0D0603; /* Set your desired background color */
+        /*opacity: 0.8; /* Set the opacity value between 0 and 1 */
+        /*border-radius: 30px; /* Adjust the value to control the roundness of the corners */
+        /*border: 2px solid white; /* Create a white border around the box */
+        margin-bottom: -55%;
+        z-index: 2;
+        
+        
+      }
+      
+ 
+  .nav-list {
+    list-style-type:none;
+    display: flex;
+    margin: 0;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+    margin-right: 5px;
+    margin-top: -35px;
+  }
+  
+  .nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+  }
+  
+  .nav-link:hover {
+    color: #bb7c2f;
+  }
+  
+  .nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 21px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hamburger {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background: white;
+    transition: all .3s ease-in-out;
+  }
+  
+  .nav-toggle:hover .hamburger {
+    background: #1E90FF;
+  }
+  
+
+  /* Triple Header Styles */
+
+.triple-header {
+  display: flex;
+  min-height: 100vh; /* Adjust the height as needed */
+}
+
+
+.left-section {
+  /* Add specific styles for the left section here if needed */
+  flex: .75; /* The side sections take 1 part of the space */
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  background-size: cover;
+  background-position: left;
+  border-radius: 30px; /* Adjust the value to control the roundness of the corners */
+  border: 2px solid white; /* Create a white border around the box */
+  background-image: url(./media/images/hero.png);
+  margin-right: -1%;
+  margin-top: -1%;
+}
+
+.right-section {
+  /* Add specific styles for the right section here if needed */
+  flex: .75; /* The side sections take 1 part of the space */
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-size: cover;
+  background-position: right;
+  border-radius: 30px; /* Adjust the value to control the roundness of the corners */
+  border: 2px solid white; /* Create a white border around the box */
+  background-image: url(./media/images/hero.png);
+  z-index: -0; /* Set a lower z-index value to send it to the back */
+  margin-left: -1%;
+  margin-top: -1%;
+  margin-bottom: 0%;
+  margin-right: 1%;
+  text-align:justify;
+}
+
+.center-section {
+  flex: 1.5; /* Increase the flex value to make the center section larger */
+  background: #fff; /* Background color for the center section */
+  color: #333; /* Text color for the center section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px; /* Spacing around the content */
+  border: 2px solid #000; /* Dark border around the center section */
+  border-radius: 8px; /* Smoothen the corners with a border radius */
+  background-image: url(./media/images/hero.png);
+  background-position: center;
+  box-shadow: 8px 12px 20px rgba(252, 252, 253, 0.91); /* Optional: add a shadow for a 3D effect */
+  margin: 0 -10px; /* Add negative margin to overlap the left and right sections */
+  margin-top: -3%;
+  margin-bottom: -3%;
+  z-index: +1; /* Set a higher z-index value to send it to the front */
+}
+
+
+
+#about-us .container {
+  width: 80%; /* Adjust the width as per your layout */
+  margin: auto; /* Center the container */
+  line-height: 1.6; /* Line height for better readability */
+  margin-bottom: 5%;
+}
+
+#about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: #f8f8f8;
+  border: 2px solid #000; /* Dark border around the center section */
+  border-radius: 10px; /* Smoothen the corners with a border radius */
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin:2px;
+  margin-top: 5px;
+  text-align: justify;
+}
+
+.about-image img {
+  max-width: 400px;
+  height:min-content;
+  border-radius: 10px; /* Optional: for rounded corners */
+  border: 2px solid #000; /* Dark border around the center section */
+  margin-left: 15%;
+  box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.91); /* Optional: add a shadow for a 3D effect */
+  color: rgb(129, 144, 158);
+}
+
+.about-text {
+  flex: 1;
+  margin:auto;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #000000;
+  margin: 5%;
+  text-align: center;
+  margin-top: -2%;
+
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  color: #000000;
+  line-height: 1.6;
+  text-shadow: 2px 2px  #ffffff;
+  border: 2px solid #ffffff00; /* Dark border around the center section */
+  background-color: #ffffff3f;
+  border-radius: 10px; /* Optional: for rounded corners */
+  /*box-shadow: 8px 12px 20px rgba(0, 0, 0, 0.91); /* Optional: add a shadow for a 3D effect */
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #about-us {
+      flex-direction: column;
+  }
+
+  .about-container {
+      flex-direction: column;
+  }
+
+  .about-text {
+      margin-left: 2;
+      margin-top: 20px;
+  }
+}
+
+
+#contact {
+  background:url(./media/images/logonobackground.png);
+  background-size: 95%;
+  background-position: 50px -350px;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  border: 155px right #ffffff; /* Dark border around the center section */
+  border-radius: 8px; /* Smoothen the corners with a border radius */
+}
+.contact-image img{
+  max-width: 600px;
+  height:auto;
+}
+.contact-content {
+  display: flex;
+  justify-content: space-around;
+  align-items:normal;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.contact-info {
+  flex-basis: 40%;
+  text-align: left;
+}
+
+.contact-form {
+  flex-basis: 50%;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 60%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+}
+
+.contact-form button {
+  width: 60%;
+  padding: 10px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #004494;
+}
+
+@media (max-width: 768px) {
+  .contact-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .contact-info, .contact-form {
+      flex-basis: 100%;
+  }
+
+}
+
+
+/* Adjustments for responsiveness could be added here as well */
+
+  /* Media Queries for Responsive Menu */
+  @media (max-width: 768px) {
+    .nav-list {
+      display: none;
+      width: 100%;
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .nav-item {
+      margin: 10px 0;
+    }
+  
+    .nav {
+      overflow: hidden;
+      transition: max-height .3s ease-in-out;
+    }
+  
+    .nav-toggle {
+      display: flex;
+    }
+    
+    .nav-toggle.active + .nav .nav-list {
+      display: flex;
+    }
+  }
+  
+  /* footer */
+.footer-content{
+  text-align: right;
+  padding: 20px;
+  position:relative ;
+  background-color: rgba(255, 255, 255, 0);
+  width: 100%;
+  font: bold;
+  border-radius: 10px; /* Optional: for rounded corners */
+  border: 2px solid #000; /* Dark border around the center section */
+  
+}
+/* Style the logo */
+.footer-logo img {
+  max-width: 50%;
+  height:min-content;
+  border-radius: 10px; /* Optional: for rounded corners */
+  border: 2px solid #000; /* Dark border around the center section */
+  margin-left: 15%;
+  
+}
